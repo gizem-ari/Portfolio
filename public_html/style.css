@@ -211,3 +211,69 @@ footer {
   color: #888;
   font-size: 0.95rem;
 }
+
+/* Bölüm kutuları - renkli modern stil */
+.section {
+  border-radius: 16px;
+  padding: 100px 40px;
+  margin: 60px auto;
+  max-width: 1100px;
+  position: relative;
+  overflow: hidden;
+  color: #eee;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+/* Farklı bölümlere gradient arka plan */
+#about {
+  background: linear-gradient(135deg, #1e3c72, #3f78da); /* mavi tonlar */
+}
+#education {
+  background: linear-gradient(135deg, #283c86, #3cc18c); /* yeşil-mavi */
+}
+#experience {
+  background: linear-gradient(135deg,#1d92c4, #b584e0); /* mor tonlar */
+}
+#projects {
+  background: linear-gradient(135deg, #1d4252, #66adcb); /* koyu mavi-gri */
+}
+#skills {
+  background: linear-gradient(135deg, #35c9bd, #65ef9a); /* yeşil */
+}
+#certificates {
+  background: linear-gradient(135deg, #243960, #37597f); /* lacivert */
+}
+#volunteering {
+  background: linear-gradient(135deg, #a98be3, #7accd2, #ffd4b7); /* pembe-turuncu */
+}
+#contact {
+  background: linear-gradient(135deg, #4daddc, #414345); /* siyah-gri */
+}
+
+/* Başlıklar biraz parlak olsun */
+.section h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+}
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: rgba(255,255,255,0.8);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Paragraflar daha okunur */
+.section p, .section li {
+  color: #f2f2f2;
+}
